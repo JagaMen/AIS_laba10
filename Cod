@@ -1,0 +1,7 @@
+) Sudo -i
+apt-get install openvpn openssl easy-rsa iptables bash-completion
+cp -r /usr/share/easy-rsa/*  /etc/openvpn/easy-rsa/
+cd /etc/openvpn/easy-rsa/
+Редактируем файл vars: nano vars
+source ./vars
+./clean-all
